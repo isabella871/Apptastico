@@ -10,8 +10,7 @@
     --azulClaro: #3d94d1;
     --grisClaro: #ebebeb;
     --grisOscuro: #8697a4;
-    --subtitulo: #8b9297;
-    --subtitulo2: #5c5c5c; 
+    --subtitulo: #8697a4;
     --texto: #8697a4;
     --cuadros: #a5a5a5;;
 }
@@ -88,19 +87,20 @@ h1{
 }
 
 .publicidad{
-    padding: 10px 7%;
+    padding: 15px 7%;
     margin-bottom: 6%;
     display: flex;
     background-color: var(--grisClaro);
     justify-content: center;
-    border-bottom: 2px solid var(--texto);
+    border-bottom: 4px solid var(--grisBarra);
     justify-content: space-between;
 }
 
 .block1{
-    padding: 0% 7%;
+    padding: 0% 6%;
     margin-bottom: 6%;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
 }
 
@@ -138,14 +138,8 @@ h1{
     gap: 30px;
 }
 
-.block3{
-    padding: 0 6%;
-    display: flex;
-    gap: 110px;
-}
-
 .icon1{
-    padding-left: 7%;
+    padding-left: 6%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -154,9 +148,16 @@ h1{
 .sub-tittle{
     display: flex;
     gap: 10px;
-    padding-bottom: 20px;
     align-items: center;
     color: var(--subtitulo2);
+}
+
+.block3{
+    padding: 2% 7%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 100px;
 }
 
 .content-blog{
@@ -166,6 +167,7 @@ h1{
 
 .content-blog img{
     border: 3px solid var(--cuadros);
+    width: 130px;
 }
 
 .sub-tittle img{
@@ -179,8 +181,7 @@ h1{
 .content-b3{
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding-bottom: 15px;
+    gap: 30px;
 }
 
 .items3{
@@ -191,7 +192,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-bottom: 15px;
+    padding: 30px 0;
     line-height: 18px;
 }
 
@@ -220,5 +221,7 @@ footer img{
 }
 
 @media (min-width: 921) and (max-width: 1279) {
-    
+    .block1 img{
+        width: 30px;
+    }
 }
