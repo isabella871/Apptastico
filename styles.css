@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid navy; */
 }
 
 :root{
@@ -20,7 +21,7 @@ body{
 }
 
 body h2{
-    font-size: 19px;
+    font-size: 24px;
 }
 
 body p{
@@ -31,13 +32,18 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 140px;
+}
+
+nav img{
+    width: 160px;
 }
 
 nav ul{
     list-style: none;
     display: flex;
-    gap: 55px;
+    gap: 60px;
+    font-size: 20px;
 }
 
 header{
@@ -47,7 +53,7 @@ header{
 }
 
 h1{
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .content-header{
@@ -70,11 +76,16 @@ h1{
     line-height: 25px;
 }
 
+.text-header p{
+    font-size: 19px;
+}
+
 .text-header button{
     background-color: var(--azulClaro);
     padding: 12px 35px;
     color: var(--blanco);
     border-radius: 50px;
+    font-size: 19px;
     border: none;
     box-shadow: -1px 5px 10px 0px rgb(49, 49, 49);
 }
@@ -100,8 +111,9 @@ h1{
     padding: 0% 6%;
     margin-bottom: 6%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .content-block1 img{
@@ -122,6 +134,7 @@ h1{
     text-align: center;
     align-items: center;
     gap: 15px;
+    width: 300px;
 }
 
 .content-block1 h2{
@@ -130,12 +143,21 @@ h1{
 
 .content-block1 p{
     color: var(--texto);
+    font-size: 18px;
+}
+
+.content-block1 button{
+    font-size: 18px;
 }
 
 .block2{
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.block2-img{
+    border: 3.5px solid var(--grisClaro);
 }
 
 .icon1{
@@ -155,7 +177,7 @@ h1{
 .block3{
     padding: 2% 7%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 100px;
 }
@@ -167,11 +189,15 @@ h1{
 
 .content-blog img{
     border: 3px solid var(--cuadros);
-    width: 130px;
+    width: 190px;
 }
 
 .sub-tittle img{
     width: 25px;
+}
+
+.sub-tittle1 p{
+    font-size: 19px;
 }
 
 .blog-img{
@@ -181,7 +207,12 @@ h1{
 .content-b3{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 37px;
+    width: 580px;
+}
+
+.content-b3 p{
+    font-size: 19px;
 }
 
 .items3{
@@ -193,7 +224,14 @@ h1{
     flex-direction: column;
     gap: 25px;
     padding: 30px 0;
-    line-height: 18px;
+}
+
+.text-ourblog{
+    width: 500px;
+}
+
+.text-ourblog p{
+    font-size: 19px;
 }
 
 .links{
@@ -208,6 +246,7 @@ footer{
     padding: 17px 6%;
     align-items: center;
     display: flex;
+    font-size: 20px;
     justify-content: space-between;
 }
 
@@ -217,11 +256,345 @@ footer{
 }
 
 footer img{
-    width: 26px;
+    width: 33px;
 }
 
-@media (min-width: 921) and (max-width: 1279) {
-    .block1 img{
-        width: 30px;
+@media (min-width: 921px) and (max-width:  1279px) {
+    nav img{
+        width: 160px;
+    }
+
+    .phone-img{
+        width: 40%;
+        height: 100%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .content-header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        margin: auto;
+        gap: 35px;
+        padding-bottom: 6%;
+    }
+
+    .text-header{
+        width: 550px;
+    }
+
+    .phone-img{
+        width: 300px;
+    }
+
+    .block1{
+        justify-content: center;
+    }
+
+    .block3{
+        justify-content: center;
+    }
+
+    .content-b3{
+        width: 800px;
+    }
+
+    .text-ourblog{
+        width: 800px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 920px){
+    nav img{
+        width: 145px;
+    }
+
+    .content-header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        margin: auto;
+        gap: 35px;
+        padding-bottom: 6%;
+    }
+
+    .block1{
+        justify-content: center;
+    }
+
+    .content-b3{
+        width: 650px;
+    }
+
+    .text-ourblog{
+        width: 650px;
+    }
+
+    .publicidad img{
+        width: 50px;
+    }
+
+    .block2{
+        padding: 4%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        padding-top: 7%;
+        height: 100px;
+        gap: 20px;
+    }
+
+    nav img{
+        width: 130px;
+    }
+
+    nav ul{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .content-header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        gap: 35px;
+        padding: 8% 6%;
+        font-size: 18px;
+    }
+
+    .request-quote{
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .text-header button{
+        font-size: 16px;
+    }
+
+    .phone-img{
+        width: 50%;
+        height: 105%;
+    }
+
+    .publicidad img{
+        width: 50px;
+    }
+
+    .block1{
+        justify-content: center;
+        font-size: 18px;
+        padding-top: 5%;
+    }
+
+    .block1 h2{
+        font-size: 23px;
+    }
+
+    .content-block1 img{
+        width: 100px;
+    }
+
+    .block2{
+        padding-top: 8%;
+    }
+
+    .block2-img{
+        width: 255px;
+    }
+
+    .icon1 h2{
+        font-size: 23px;
+    }
+
+    .block3{
+        padding-top: 8%;
+        gap: 60px;
+    }
+
+    .sub-tittle{
+        font-size: 23px;
+    }
+
+    .sub-tittle1{
+        padding-bottom: 50px;
+    }
+
+    .content-blog{
+        flex-direction: column;
+    }
+
+    .blog-img{
+        width: 130px;
+        height: 120px;
+        justify-content: center;
+    }
+
+    .content-blog-text{
+        font-size: 18px;
+    }
+
+    .content-blog-text{
+        width: 420px;
+    }
+
+    .text-ourblog{
+        width: 420px;
+        font-size: 14px;
+    }
+
+    footer img{
+        width: 25px;
+    }
+}
+
+@media (min-width: 352px) and (max-width: 480px){
+    nav{
+        flex-direction: column;
+        padding-top: 6%;
+        height: 90px;
+    }
+
+    nav img{
+        width: 115px;
+    }
+
+    nav ul{
+        font-size: 16px;
+        gap: 22px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .content-header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        gap: 35px;
+        padding: 12% 6%;
+        font-size: 18px;
+    }
+
+    .phone-img{
+        width: 52%;
+        height: 108%;
+    }
+
+    .text-header p{
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .request-quote{
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .request-quote button{
+        font-size: 15px;
+    }
+
+    .publicidad{
+        padding: 8px 7%;
+    }
+
+    .publicidad img{
+        width: 33px;
+    }
+
+    .block1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .content-block1 p{
+        font-size: 15px;
+    }
+
+    .content-block1 h2{
+        font-size: 18px;
+    }
+
+    .content-block1 img{
+        width: 85px;
+    }
+
+    .content-block1 button{
+        font-size: 15px
+    }
+
+    .block1{
+        justify-content: center;
+    }
+
+    .block3{
+        gap: 55px;
+    }
+
+    .block2-img{
+        width: 165px;
+    }
+
+    .content-blog{
+        flex-direction: column;
+    }
+
+    .content-blog img{
+        width: 130px;
+        height: 105px;
+    }
+
+    .content-blog-text{
+        font-size: 15px;
+    }
+
+    .content-blog-text p{
+        font-size: 16px;
+    }
+
+    .content-b3 p{
+        font-size: 15px;
+    }
+
+    .icon1 h2{
+        font-size: 20px;
+    }
+
+    .sub-tittle h2{
+        font-size: 20px;
+    }
+
+    .text-ourblog{
+        width: auto;
+    }
+
+    .text-ourblog p{
+        font-size: 15px;
+    }
+
+    .sub-tittle1 p{
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    footer img{
+        width: 23px;
     }
 }
