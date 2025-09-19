@@ -328,6 +328,15 @@ footer img{
         width: 145px;
     }
 
+    nav{
+        padding: 2% 6%;
+    }
+
+    nav ul{
+        justify-content: end;
+        gap: 25px;
+    }
+
     .content-header{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -367,7 +376,7 @@ footer img{
         flex-direction: column;
         padding-top: 7%;
         height: 100px;
-        gap: 25px;
+        gap: 35px;
     }
 
     nav img{
@@ -376,6 +385,8 @@ footer img{
 
     nav ul{
         font-size: 18px;
+        justify-content: center;
+        gap: 40px;
     }
 
     h1{
